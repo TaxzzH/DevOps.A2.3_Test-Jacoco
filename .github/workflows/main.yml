@@ -40,7 +40,7 @@ jobs:
 
     # Paso 5: Publicar reporte de cobertura JaCoCo
     - name: Upload JaCoCo Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: jacoco-report
         path: target/site/jacoco/
@@ -67,7 +67,7 @@ jobs:
 
     # Paso 4: Subir Artefacto JAR
     - name: Upload JAR Artefact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-jar
         path: target/*.jar
